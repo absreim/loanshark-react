@@ -1,9 +1,6 @@
 import axios from 'axios'
 
 const SET_ALL = 'SET_ALL'
-const SET_PENDING = 'SET_PENDING'
-const SET_OUTSTANDING = 'SET_OUTSTANDING'
-const SET_COMPLETED = 'SET_COMPLETED'
 const SET_SELECTED = 'SET_SELECTED'
 
 const setAll = (pending, outstanding, completed) => ({
@@ -16,21 +13,6 @@ const setAll = (pending, outstanding, completed) => ({
 const setSelected = (loan) => ({
     type: SET_SELECTED,
     loan
-})
-
-const setPending = (loans) => ({
-    type: SET_PENDING,
-    loans
-})
-
-const setOutstanding = (loans) => ({
-    type: SET_OUTSTANDING,
-    loans
-})
-
-const setCompleted = (loans) => ({
-    type: SET_COMPLETED,
-    loans
 })
 
 const getAllLoansByType = () => async (dispatch) => {
