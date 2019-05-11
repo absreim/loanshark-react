@@ -59,7 +59,7 @@ export const signup = (email, password, name) => async (dispatch) => {
     }
 }
 
-export default function(state = null, action){
+ const userReducer = function(state = null, action){
     switch(action.type){
         case SET_USER:
             return action.user
@@ -69,3 +69,5 @@ export default function(state = null, action){
             return state
     }
 }
+
+export default userReducer
