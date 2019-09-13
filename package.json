@@ -4,6 +4,9 @@
   "description": "React web client for Loanshark",
   "main": "src/index.js",
   "scripts": {
+    "start": "node_modules/.bin/http-server public",
+    "build": "node_modules/.bin/webpack-cli -p",
+    "build-dev": "node_modules/.bin/webpack-cli -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +26,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "core-js": "^2.6.9",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
@@ -32,6 +36,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-standard": "^4.0.1",
+    "http-server": "^0.11.1",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8"
   },

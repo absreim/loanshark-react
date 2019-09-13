@@ -1,13 +1,11 @@
 module.exports = {
-  entry: [
-    './src/index.jsx'
-  ],
+  entry: ['./src/index.jsx'],
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   devtool: 'source-map',
   module: {
@@ -15,8 +13,8 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
-    ]
-  }
-}
+        loader: 'babel-loader',
+      },
+    ],
+  },
+};
