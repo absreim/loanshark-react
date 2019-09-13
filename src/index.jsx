@@ -9,10 +9,10 @@ import gql from 'graphql-tag';
 const cache = new InMemoryCache();
 const link = new HttpLink({
   uri: 'http://localhost:3000/graphql',
+  credentials: 'include',
 });
 const client = new ApolloClient({ cache, link });
 
-// TODO: verfiy query is correct
 const GET_USER = gql`
   query GetUser {
     me {
