@@ -3,7 +3,7 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
 const WHO_AM_I = gql`
-  query whoAmI @client {
+  query whoAmI {
     me {
       id,
       email,
